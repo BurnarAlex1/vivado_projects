@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jan 10 15:43:05 2022
+# Process ID: 844
+# Current directory: D:/vivado_projects/clock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1192 D:\vivado_projects\clock\clock.xpr
+# Log file: D:/vivado_projects/clock/vivado.log
+# Journal file: D:/vivado_projects/clock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_projects/clock/clock.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 754.102 ; gain = 105.102
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 10 17:43:37 2022...

@@ -1,0 +1,336 @@
+
+*** Running vivado
+    with args -log SPI.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source SPI.tcl -notrace
+Command: synth_design -top SPI -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8380 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 281.805 ; gain = 71.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SPI' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:50]
+	Parameter frecvSclk bound to: 5000000 - type: integer 
+	Parameter size bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'val' is read in the process but is not in the sensitivity list [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:78]
+WARNING: [Synth 8-614] signal 'CEP' is read in the process but is not in the sensitivity list [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:93]
+WARNING: [Synth 8-614] signal 'ret_start' is read in the process but is not in the sensitivity list [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:102]
+WARNING: [Synth 8-614] signal 'CEN' is read in the process but is not in the sensitivity list [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:111]
+WARNING: [Synth 8-3848] Net MOSI in module/entity SPI does not have driver. [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:41]
+WARNING: [Synth 8-3848] Net RXDATA in module/entity SPI does not have driver. [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:43]
+WARNING: [Synth 8-3848] Net SS in module/entity SPI does not have driver. [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:45]
+WARNING: [Synth 8-3848] Net TXRDY in module/entity SPI does not have driver. [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:46]
+WARNING: [Synth 8-3848] Net RXRDY in module/entity SPI does not have driver. [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'SPI' (1#1) [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:50]
+WARNING: [Synth 8-3331] design SPI has unconnected port MOSI
+WARNING: [Synth 8-3331] design SPI has unconnected port RXDATA
+WARNING: [Synth 8-3331] design SPI has unconnected port SS
+WARNING: [Synth 8-3331] design SPI has unconnected port TXRDY
+WARNING: [Synth 8-3331] design SPI has unconnected port RXRDY
+WARNING: [Synth 8-3331] design SPI has unconnected port TXDATA
+WARNING: [Synth 8-3331] design SPI has unconnected port Start
+WARNING: [Synth 8-3331] design SPI has unconnected port Rst
+WARNING: [Synth 8-3331] design SPI has unconnected port MISO
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 319.227 ; gain = 108.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 319.227 ; gain = 108.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 319.227 ; gain = 108.938
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5545] ROM "SCLK" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SCLK" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'SCLK_reg' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:82]
+WARNING: [Synth 8-327] inferring latch for variable 'val_reg' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 335.902 ; gain = 125.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SPI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "SCLK" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SCLK" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "E0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design SPI has unconnected port MOSI
+WARNING: [Synth 8-3331] design SPI has unconnected port RXDATA
+WARNING: [Synth 8-3331] design SPI has unconnected port SS
+WARNING: [Synth 8-3331] design SPI has unconnected port TXRDY
+WARNING: [Synth 8-3331] design SPI has unconnected port RXRDY
+WARNING: [Synth 8-3331] design SPI has unconnected port TXDATA
+WARNING: [Synth 8-3331] design SPI has unconnected port Start
+WARNING: [Synth 8-3331] design SPI has unconnected port Rst
+WARNING: [Synth 8-3331] design SPI has unconnected port MISO
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 471.066 ; gain = 260.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 471.066 ; gain = 260.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 472.051 ; gain = 261.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 472.051 ; gain = 261.762
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[31] with 1st driver pin 'val_reg[31]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[31] with 2nd driver pin 'val_reg[31]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[30] with 1st driver pin 'val_reg[30]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[30] with 2nd driver pin 'val_reg[30]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[29] with 1st driver pin 'val_reg[29]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[29] with 2nd driver pin 'val_reg[29]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[28] with 1st driver pin 'val_reg[28]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[28] with 2nd driver pin 'val_reg[28]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[27] with 1st driver pin 'val_reg[27]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[27] with 2nd driver pin 'val_reg[27]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[26] with 1st driver pin 'val_reg[26]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[26] with 2nd driver pin 'val_reg[26]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[25] with 1st driver pin 'val_reg[25]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[25] with 2nd driver pin 'val_reg[25]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[24] with 1st driver pin 'val_reg[24]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[24] with 2nd driver pin 'val_reg[24]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[23] with 1st driver pin 'val_reg[23]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[23] with 2nd driver pin 'val_reg[23]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[22] with 1st driver pin 'val_reg[22]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[22] with 2nd driver pin 'val_reg[22]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[21] with 1st driver pin 'val_reg[21]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[21] with 2nd driver pin 'val_reg[21]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[20] with 1st driver pin 'val_reg[20]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[20] with 2nd driver pin 'val_reg[20]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[19] with 1st driver pin 'val_reg[19]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[19] with 2nd driver pin 'val_reg[19]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[18] with 1st driver pin 'val_reg[18]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[18] with 2nd driver pin 'val_reg[18]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[17] with 1st driver pin 'val_reg[17]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[17] with 2nd driver pin 'val_reg[17]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[16] with 1st driver pin 'val_reg[16]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[16] with 2nd driver pin 'val_reg[16]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[15] with 1st driver pin 'val_reg[15]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[15] with 2nd driver pin 'val_reg[15]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[14] with 1st driver pin 'val_reg[14]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[14] with 2nd driver pin 'val_reg[14]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[13] with 1st driver pin 'val_reg[13]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[13] with 2nd driver pin 'val_reg[13]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[12] with 1st driver pin 'val_reg[12]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[12] with 2nd driver pin 'val_reg[12]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[11] with 1st driver pin 'val_reg[11]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[11] with 2nd driver pin 'val_reg[11]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[10] with 1st driver pin 'val_reg[10]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[10] with 2nd driver pin 'val_reg[10]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[9] with 1st driver pin 'val_reg[9]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[9] with 2nd driver pin 'val_reg[9]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[8] with 1st driver pin 'val_reg[8]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[8] with 2nd driver pin 'val_reg[8]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[7] with 1st driver pin 'val_reg[7]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[7] with 2nd driver pin 'val_reg[7]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[6] with 1st driver pin 'val_reg[6]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[6] with 2nd driver pin 'val_reg[6]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[5] with 1st driver pin 'val_reg[5]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[5] with 2nd driver pin 'val_reg[5]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[4] with 1st driver pin 'val_reg[4]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[4] with 2nd driver pin 'val_reg[4]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[3] with 1st driver pin 'val_reg[3]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[3] with 2nd driver pin 'val_reg[3]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[2] with 1st driver pin 'val_reg[2]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[2] with 2nd driver pin 'val_reg[2]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[1] with 1st driver pin 'val_reg[1]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[1] with 2nd driver pin 'val_reg[1]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[0] with 1st driver pin 'val_reg[0]__0/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:75]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net val[0] with 2nd driver pin 'val_reg[0]/Q' [D:/vivado_projects/interfata_SPI/interfata_SPI.srcs/sources_1/new/SPI.vhd:80]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 472.051 ; gain = 261.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 472.051 ; gain = 261.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 472.051 ; gain = 261.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 472.051 ; gain = 261.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 472.051 ; gain = 261.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |LUT2   |     1|
+|5     |LUT6   |     8|
+|6     |FDRE   |    32|
+|7     |LD     |    32|
+|8     |LDP    |     1|
+|9     |IBUF   |     1|
+|10    |OBUF   |     1|
+|11    |OBUFT  |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    92|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 472.051 ; gain = 261.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 64 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 472.051 ; gain = 261.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 472.051 ; gain = 261.762
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  LD => LDCE: 32 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 29 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 540.004 ; gain = 329.715
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_projects/interfata_SPI/interfata_SPI.runs/synth_1/SPI.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 540.004 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 10 03:53:01 2022...

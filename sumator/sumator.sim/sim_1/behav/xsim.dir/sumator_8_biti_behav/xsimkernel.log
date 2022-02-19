@@ -1,0 +1,7 @@
+Running: xsim.dir/sumator_8_biti_behav/xsimk.exe -simmode gui -wdb sumator_8_biti_behav.wdb -simrunnum 0 -socket 55539
+Design successfully loaded
+Design Loading Memory Usage: 8332 KB (Peak: 8332 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 9012 KB (Peak: 9012 KB)
+Simulation CPU Usage: 77 ms

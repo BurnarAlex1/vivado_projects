@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Nov 01 14:26:21 2021
+# Process ID: 20776
+# Current directory: D:/vivado_projects/InmultireMatriceala/InmultireMatriceala.runs/synth_1
+# Command line: vivado.exe -log InmultireMatriceala.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InmultireMatriceala.tcl
+# Log file: D:/vivado_projects/InmultireMatriceala/InmultireMatriceala.runs/synth_1/InmultireMatriceala.vds
+# Journal file: D:/vivado_projects/InmultireMatriceala/InmultireMatriceala.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source InmultireMatriceala.tcl -notrace

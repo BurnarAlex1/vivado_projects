@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivado_projects/convertor/convertor.srcs/sources_1/new/convertor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convertor
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity convertor_sim

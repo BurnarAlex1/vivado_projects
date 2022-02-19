@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Apr 01 21:22:27 2021
+# Process ID: 15548
+# Current directory: D:/vivado_projects/MIPS_ID/MIPS_ID.runs/synth_1
+# Command line: vivado.exe -log ID.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ID.tcl
+# Log file: D:/vivado_projects/MIPS_ID/MIPS_ID.runs/synth_1/ID.vds
+# Journal file: D:/vivado_projects/MIPS_ID/MIPS_ID.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ID.tcl -notrace

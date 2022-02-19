@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../InmultireMatriceala.srcs/sources_1/new/SumatorElementar.vhd"
+vhdl xil_defaultlib  "../../../InmultireMatriceala.srcs/sources_1/new/InmultireMatriceala.vhd"
+vhdl xil_defaultlib  "../../../InmultireMatriceala.srcs/sim_1/new/Inmultire_sim.vhd"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Oct 17 19:12:00 2021
+# Process ID: 15988
+# Current directory: D:/vivado_projects/automat_cu_stari/automat_cu_stari.runs/synth_1
+# Command line: vivado.exe -log automat.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source automat.tcl
+# Log file: D:/vivado_projects/automat_cu_stari/automat_cu_stari.runs/synth_1/automat.vds
+# Journal file: D:/vivado_projects/automat_cu_stari/automat_cu_stari.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source automat.tcl -notrace

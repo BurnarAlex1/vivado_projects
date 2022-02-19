@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Oct 25 14:29:50 2021
+# Process ID: 3408
+# Current directory: D:/vivado_projects/sumator/sumator.runs/impl_1
+# Command line: vivado.exe -log sumator_8_biti.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sumator_8_biti.tcl -notrace
+# Log file: D:/vivado_projects/sumator/sumator.runs/impl_1/sumator_8_biti.vdi
+# Journal file: D:/vivado_projects/sumator/sumator.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sumator_8_biti.tcl -notrace

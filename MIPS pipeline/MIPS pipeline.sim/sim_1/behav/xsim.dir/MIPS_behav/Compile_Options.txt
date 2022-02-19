@@ -1,0 +1,1 @@
+-wto "c24d62b2e69248898f968445c58fc1cb" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "MIPS_behav" "xil_defaultlib.MIPS" -log "elaborate.log" 

@@ -1,0 +1,34 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='0''0''0''1') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''0''0''0')
+Time: 20 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='0''0''1''0') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''0''0''0')
+Time: 30 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='0''0''1''1') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''0''0''1')
+Time: 40 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='0''1''0''0') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''0''1''0')
+Time: 50 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='0''1''0''1') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''0''1''1')
+Time: 60 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='0''1''1''0') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''1''0''0')
+Time: 70 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='0''1''1''1') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''1''0''1')
+Time: 80 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='1''0''0''0') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''1''1''0')
+Time: 90 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''0' BCD0 ='1''0''0''1') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '0''1''1''1')
+Time: 100 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''1' BCD0 ='0''0''0''0') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '1''0''0''0')
+Time: 110 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''1' BCD0 ='0''0''0''1') /= Valoare obtinuta (BCD1='0''0''0''0' BCD0= '1''0''0''1')
+Time: 120 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''1' BCD0 ='0''0''1''0') /= Valoare obtinuta (BCD1='0''0''0''1' BCD0= '0''0''0''0')
+Time: 130 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''1' BCD0 ='0''0''1''1') /= Valoare obtinuta (BCD1='0''0''0''1' BCD0= '0''0''0''1')
+Time: 140 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''1' BCD0 ='0''1''0''0') /= Valoare obtinuta (BCD1='0''0''0''1' BCD0= '0''0''1''0')
+Time: 150 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Error: Rezultat asteptat ( BCD1 ='0''0''0''1' BCD0 ='0''1''0''1') /= Valoare obtinuta (BCD1='0''0''0''1' BCD0= '0''0''1''1')
+Time: 160 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd
+Note: Testare terminata cu 15 erori
+Time: 160 ns  Iteration: 0  Process: /convertor_sim/gen_vect_test  File: D:/vivado_projects/convertor/convertor.srcs/sim_1/new/convertor_sim.vhd

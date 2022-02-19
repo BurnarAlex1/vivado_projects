@@ -1,0 +1,635 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 17 17:53:08 2021
+# Process ID: 22508
+# Current directory: D:/vivado_projects/test_env/test_env.runs/synth_1
+# Command line: vivado.exe -log test_env.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+# Log file: D:/vivado_projects/test_env/test_env.runs/synth_1/test_env.vds
+# Journal file: D:/vivado_projects/test_env/test_env.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test_env.tcl -notrace
+Command: synth_design -top test_env -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26048 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 281.930 ; gain = 71.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:53]
+INFO: [Synth 8-3491] module 'MPG' declared at 'D:/vivado_projects/test_env/test_env.srcs/sources_1/new/MPG.vhd:36' bound to instance 'comp1' of component 'MPG' [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'MPG' [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/MPG.vhd:42]
+WARNING: [Synth 8-614] signal 'iesire_num' is read in the process but is not in the sensitivity list [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/MPG.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (1#1) [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/MPG.vhd:42]
+WARNING: [Synth 8-614] signal 'enable_mpg' is read in the process but is not in the sensitivity list [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:95]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net led in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:44]
+WARNING: [Synth 8-3848] Net array_name in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:88]
+WARNING: [Synth 8-3848] Net array_name in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:88]
+WARNING: [Synth 8-3848] Net array_name in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:88]
+WARNING: [Synth 8-3848] Net array_name in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:88]
+WARNING: [Synth 8-3848] Net array_name in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:88]
+WARNING: [Synth 8-3848] Net array_name in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:88]
+WARNING: [Synth 8-3848] Net array_name in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:88]
+WARNING: [Synth 8-3848] Net array_name in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:88]
+WARNING: [Synth 8-3848] Net do in module/entity test_env does not have driver. [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (2#1) [D:/vivado_projects/test_env/test_env.srcs/sources_1/new/test_env.vhd:53]
+WARNING: [Synth 8-3331] design test_env has unconnected port led
+WARNING: [Synth 8-3331] design test_env has unconnected port do[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[7]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[6]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[5]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[0]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn_clk
+WARNING: [Synth 8-3331] design test_env has unconnected port enable
+WARNING: [Synth 8-3331] design test_env has unconnected port wen
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 319.332 ; gain = 109.145
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 319.332 ; gain = 109.145
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivado_projects/test_env/constrangeri.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/vivado_projects/test_env/constrangeri.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/vivado_projects/test_env/constrangeri.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/vivado_projects/test_env/constrangeri.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/vivado_projects/test_env/constrangeri.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/vivado_projects/test_env/constrangeri.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/vivado_projects/test_env/constrangeri.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/vivado_projects/test_env/constrangeri.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/vivado_projects/test_env/constrangeri.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/vivado_projects/test_env/constrangeri.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/vivado_projects/test_env/constrangeri.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/vivado_projects/test_env/constrangeri.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/vivado_projects/test_env/constrangeri.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/vivado_projects/test_env/constrangeri.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/vivado_projects/test_env/constrangeri.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/vivado_projects/test_env/constrangeri.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/vivado_projects/test_env/constrangeri.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/vivado_projects/test_env/constrangeri.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [D:/vivado_projects/test_env/constrangeri.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/vivado_projects/test_env/constrangeri.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [D:/vivado_projects/test_env/constrangeri.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/vivado_projects/test_env/constrangeri.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [D:/vivado_projects/test_env/constrangeri.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/vivado_projects/test_env/constrangeri.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [D:/vivado_projects/test_env/constrangeri.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/vivado_projects/test_env/constrangeri.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [D:/vivado_projects/test_env/constrangeri.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/vivado_projects/test_env/constrangeri.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [D:/vivado_projects/test_env/constrangeri.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/vivado_projects/test_env/constrangeri.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [D:/vivado_projects/test_env/constrangeri.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/vivado_projects/test_env/constrangeri.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [D:/vivado_projects/test_env/constrangeri.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/vivado_projects/test_env/constrangeri.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [D:/vivado_projects/test_env/constrangeri.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/vivado_projects/test_env/constrangeri.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [D:/vivado_projects/test_env/constrangeri.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/vivado_projects/test_env/constrangeri.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [D:/vivado_projects/test_env/constrangeri.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/vivado_projects/test_env/constrangeri.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [D:/vivado_projects/test_env/constrangeri.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/vivado_projects/test_env/constrangeri.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [D:/vivado_projects/test_env/constrangeri.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/vivado_projects/test_env/constrangeri.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [D:/vivado_projects/test_env/constrangeri.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/vivado_projects/test_env/constrangeri.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [D:/vivado_projects/test_env/constrangeri.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/vivado_projects/test_env/constrangeri.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [D:/vivado_projects/test_env/constrangeri.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[4]'. [D:/vivado_projects/test_env/constrangeri.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[4]'. [D:/vivado_projects/test_env/constrangeri.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[5]'. [D:/vivado_projects/test_env/constrangeri.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[5]'. [D:/vivado_projects/test_env/constrangeri.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[6]'. [D:/vivado_projects/test_env/constrangeri.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'cat[6]'. [D:/vivado_projects/test_env/constrangeri.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [D:/vivado_projects/test_env/constrangeri.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [D:/vivado_projects/test_env/constrangeri.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [D:/vivado_projects/test_env/constrangeri.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [D:/vivado_projects/test_env/constrangeri.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [D:/vivado_projects/test_env/constrangeri.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [D:/vivado_projects/test_env/constrangeri.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/vivado_projects/test_env/constrangeri.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/vivado_projects/test_env/constrangeri.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado_projects/test_env/constrangeri.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 596.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module test_env 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module MPG 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design test_env has unconnected port led
+WARNING: [Synth 8-3331] design test_env has unconnected port do[15]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[14]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[13]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[12]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[11]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[10]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[9]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[8]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[7]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[6]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[5]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[4]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[3]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[2]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[1]
+WARNING: [Synth 8-3331] design test_env has unconnected port do[0]
+WARNING: [Synth 8-3331] design test_env has unconnected port btn_clk
+WARNING: [Synth 8-3331] design test_env has unconnected port enable
+WARNING: [Synth 8-3331] design test_env has unconnected port wen
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[0]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[1]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[2]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[3]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[4]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[5]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[6]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[7]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[8]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[9]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[10]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[11]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[12]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[13]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[14]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/iesire_num_reg[15]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/q1_reg) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/q2_reg) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (comp1/q3_reg) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (iesire_num_reg[7]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (iesire_num_reg[6]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (iesire_num_reg[5]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (iesire_num_reg[4]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (iesire_num_reg[3]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (iesire_num_reg[2]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (iesire_num_reg[1]) is unused and will be removed from module test_env.
+WARNING: [Synth 8-3332] Sequential element (iesire_num_reg[0]) is unused and will be removed from module test_env.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUF  |    16|
+|2     |OBUFT |    17|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    33|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 596.180 ; gain = 385.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 596.180 ; gain = 109.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 596.180 ; gain = 385.992
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 175 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 596.180 ; gain = 385.992
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_projects/test_env/test_env.runs/synth_1/test_env.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 596.180 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 17 17:54:07 2021...

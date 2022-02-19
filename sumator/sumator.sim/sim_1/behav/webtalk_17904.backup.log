@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Oct 25 13:43:34 2021
+# Process ID: 17904
+# Current directory: D:/vivado_projects/sumator/sumator.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source D:/vivado_projects/sumator/sumator.sim/sim_1/behav/xsim.dir/sumator_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/vivado_projects/sumator/sumator.sim/sim_1/behav/webtalk.log
+# Journal file: D:/vivado_projects/sumator/sumator.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source D:/vivado_projects/sumator/sumator.sim/sim_1/behav/xsim.dir/sumator_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 49.410 ; gain = 0.090
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 25 13:43:46 2021...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 24 16:44:41 2021
+# Process ID: 11872
+# Current directory: D:/vivado_projects/project_3/project_3.runs/impl_1
+# Command line: vivado.exe -log Booth.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Booth.tcl -notrace
+# Log file: D:/vivado_projects/project_3/project_3.runs/impl_1/Booth.vdi
+# Journal file: D:/vivado_projects/project_3/project_3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Booth.tcl -notrace
